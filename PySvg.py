@@ -21,26 +21,26 @@ class SvgPlot:
         self.filetxt = ''
 
     def addLinePath(self, points, color='black', thickness=2):
-        convPoints = []
+        mappedPoints = []
         for (x,y) in points:
-            convPoints.append(self.map(x,y))
+            mappedPoints.append(self.map(x,y))
         # Create the path:
-        (x0,y0) = convPoints.pop(0)
+        (x0,y0) = mappedPoints.pop(0)
         pathToAdd = f'M{x0} {y0} '
-        for (x,y) in convPoints:
+        for (x,y) in mappedPoints:
             pathToAdd += f'L{x} {y} '
         # Add the path:
         self.filetxt += f'''\t<path d="{pathToAdd}" fill-opacity="0" stroke="{color}" stroke-width="{thickness}"/>\n'''
     
     def addCubicPath(self, points, color='black', thickness=2):
-        convPoints = []
+        mappedPoints = []
         for (P0, P1, P2, P3) in points:
-            convPoints.append(
+            mappedPoints.append(
                 (self.map(P0[0], P0[1]), self.map(P1[0], P1[1]), self.map(P2[0], P2[1]), self.map(P3[0], P3[1]))
             )
         # Create the path:
-        pathToAdd = f'M {convPoints[0][0][0]} {convPoints[0][0][1]} '
-        for (_, P1, P2, P3) in convPoints:
+        pathToAdd = f'M {mappedPoints[0][0][0]} {mappedPoints[0][0][1]} '
+        for (_, P1, P2, P3) in mappedPoints:
             pathToAdd += f'C {P1[0]} {P1[1]}, {P2[0]} {P2[1]}, {P3[0]} {P3[1]} '
         # Add the path:
         self.filetxt += f'''\t<path d="{pathToAdd}" fill-opacity="0" stroke="{color}" stroke-width="{thickness}"/>\n'''
