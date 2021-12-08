@@ -1,38 +1,51 @@
 <svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+	<line x1="70.0" y1="455.0" x2="70.0" y2="45.0" stroke="darkgray" stroke-width="2"/>
+	<line x1="65.0" y1="450.0" x2="735.0" y2="450.0" stroke="darkgray" stroke-width="2"/>
+	<text x="400.0" y="490.0" fill="black" text-anchor="middle" dominant-baseline="middle">x axis</text>
+	<text transform="translate(19.999999999999993, 250.0) rotate(270)" text-anchor="middle" dominant-baseline="middle">y axis</text>
+	<text x="70.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">0.00</text>
+	<line x1="145.0" y1="455.0" x2="145.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="145.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">1.43</text>
+	<line x1="145.0" y1="450.0" x2="145.0" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="220.00000000000003" y1="455.0" x2="220.00000000000003" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="220.00000000000003" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">2.86</text>
+	<line x1="220.00000000000003" y1="450.0" x2="220.00000000000003" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="295.0" y1="455.0" x2="295.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="295.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">4.28</text>
+	<line x1="295.0" y1="450.0" x2="295.0" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="370.00000000000006" y1="455.0" x2="370.00000000000006" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="370.00000000000006" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">5.71</text>
+	<line x1="370.00000000000006" y1="450.0" x2="370.00000000000006" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="445.0" y1="455.0" x2="445.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="445.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">7.14</text>
+	<line x1="445.0" y1="450.0" x2="445.0" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="520.0" y1="455.0" x2="520.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="520.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">8.57</text>
+	<line x1="520.0" y1="450.0" x2="520.0" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="595.0" y1="455.0" x2="595.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="595.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">10.00</text>
+	<line x1="595.0" y1="450.0" x2="595.0" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="670.0000000000001" y1="455.0" x2="670.0000000000001" y2="445.0" stroke="darkgray" stroke-width="2"/>
+	<text x="670.0000000000001" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">11.42</text>
+	<line x1="670.0000000000001" y1="450.0" x2="670.0000000000001" y2="45.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<text x="60.0" y="450.0" fill="black" text-anchor="end" dominant-baseline="middle">-1.00</text>
+	<line x1="65.0" y1="375.0" x2="75.0" y2="375.0" stroke="darkgray" stroke-width="2"/>
+	<text x="60.0" y="375.0" fill="black" text-anchor="end" dominant-baseline="middle">-0.62</text>
+	<line x1="70.0" y1="375.0" x2="735.0" y2="375.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="65.0" y1="300.0" x2="75.0" y2="300.0" stroke="darkgray" stroke-width="2"/>
+	<text x="60.0" y="300.0" fill="black" text-anchor="end" dominant-baseline="middle">-0.25</text>
+	<line x1="70.0" y1="300.0" x2="735.0" y2="300.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="65.0" y1="225.0" x2="75.0" y2="225.0" stroke="darkgray" stroke-width="2"/>
+	<text x="60.0" y="225.0" fill="black" text-anchor="end" dominant-baseline="middle">0.12</text>
+	<line x1="70.0" y1="225.0" x2="735.0" y2="225.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="65.0" y1="150.0" x2="75.0" y2="150.0" stroke="darkgray" stroke-width="2"/>
+	<text x="60.0" y="150.0" fill="black" text-anchor="end" dominant-baseline="middle">0.50</text>
+	<line x1="70.0" y1="150.0" x2="735.0" y2="150.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
+	<line x1="65.0" y1="75.0" x2="75.0" y2="75.0" stroke="darkgray" stroke-width="2"/>
+	<text x="60.0" y="75.0" fill="black" text-anchor="end" dominant-baseline="middle">0.88</text>
+	<line x1="70.0" y1="75.0" x2="735.0" y2="75.0" stroke="darkgray" stroke-width="2" stroke-dasharray="4,4"/>
 	<path d="M 70.0 250.0 C 91.03726456179788 168.03406283820516, 115.04312137717147 82.25044928363587, 136.0 59.78869674096927 C 156.90305205256914 31.847549403493304, 181.04269561099815 64.45493235465, 202.0 132.4429495415053 C 223.03780393493614 196.9639943068227, 246.96219606506392 303.03600569317734, 268.0 367.5570504584946 C 288.9573043890016 435.54506764534995, 313.09694794743154 468.1524505965067, 334.0 440.21130325903073 C 354.95687862282887 417.7495507163637, 378.96273543820206 331.96593716179507, 400.0 250.00000000000006 C 421.03726456179817 168.03406283820482, 445.0431213771712 82.25044928363633, 466.0 59.78869674096927 C 486.903052052569 31.847549403493304, 511.04269561099784 64.45493235464966, 532.0 132.4429495415053 C 553.0378039349365 196.96399430682402, 576.9621960650636 303.03600569317587, 598.0 367.5570504584946 C 618.9573043890023 435.5450676453502, 643.0969479474305 468.1524505965066, 664.0 440.21130325903073 C 684.956878622829 417.74955071636435, 708.962735438201 331.96593716179666, 730.0 250.0000000000001 " fill-opacity="0" stroke="black" stroke-width="2"/>
 	<path d="M 70.0 50.0 C 90.91574428685783 47.112614488462896, 114.99587253106425 109.33674023328382, 136.0 188.1966011250105 C 157.04901540529625 265.2182923587465, 180.99569700564805 366.1006300111982, 202.0 411.80339887498945 C 222.91786877046513 462.21171091990675, 247.08213122953487 462.21171091990686, 268.0 411.8033988749895 C 289.0043029943512 366.10063001119954, 312.95098459470375 265.2182923587475, 334.0 188.19660112501055 C 355.0041274689358 109.33674023328376, 379.08425571314183 47.11261448846341, 400.0 50.0 C 420.91574428685817 47.11261448846324, 444.995872531064 109.33674023328336, 466.0 188.1966011250105 C 487.04901540529664 265.2182923587469, 510.99569700564757 366.10063001119795, 532.0 411.80339887498945 C 552.917868770465 462.21171091990675, 577.082131229535 462.21171091990675, 598.0 411.8033988749895 C 619.0043029943528 366.1006300111976, 642.9509845947032 265.2182923587476, 664.0 188.1966011250106 C 685.0041274689362 109.33674023328354, 709.0842557131422 47.11261448846295, 730.0 50.0 " fill-opacity="0" stroke="red" stroke-width="2"/>
 	<path d="M 70.0 50.0 C 87.39565069584329 49.403162889697, 107.60099852048654 63.225587044288204, 125.0 84.60133137346236 C 142.39559554531343 105.1537500049825, 162.60215036520066 138.05035213916267, 180.0 167.30066568673118 C 197.3972265780203 196.56800024160947, 217.60473569456096 229.0933843897924, 235.0 250.0 C 252.39735467307972 271.6438929176527, 272.60501444219017 287.23150200703816, 290.0 291.3496671566344 C 307.3959945746511 296.33579493712267, 327.6031619226797 291.9583235681609, 345.0 283.0797337253075 C 362.39582012896017 274.615076540031, 382.6039131285491 260.6577903556034, 400.0 250.0 C 417.3959872016323 239.15093200306103, 437.6046026586352 229.59702398519005, 455.0 226.37161876763753 C 472.3955313316161 222.65932433599335, 492.6043075006611 224.25112205422164, 510.0 229.32516642168275 C 527.3955457862064 234.08472323584942, 547.6042743205703 242.8567928699503, 565.0 250.0 C 582.3956826857735 257.2279296547267, 602.6045769007513 264.0336036141092, 620.0 266.53986686265375 C 637.3954832066325 269.37842447053157, 657.6044576384106 268.5638996475027, 675.0 265.0362426024125 C 692.39543249773 261.75195524939727, 712.604458918273 255.37019279198432, 730.0 250.0 " fill-opacity="0" stroke="blue" stroke-width="2"/>
 	<path d="M 70.0 50.0 C 87.38739492680821 114.88516515543347, 107.62807389784226 165.16750723633334, 125.0 201.15273563044784 C 142.39858633532688 237.6326699439271, 162.6069547151019 267.79494744174787, 180.0 282.31649375435615 C 197.39707729958513 297.9204651262988, 217.6034523863876 302.7619402141642, 235.0 298.2906014010448 C 252.39586755568453 294.57119577554533, 272.6029260970244 281.87813791674523, 290.0 269.27231513576237 C 307.39615953335095 256.7437690799071, 327.60435705624406 242.21172002531296, 345.0 233.96404805252274 C 362.3958100599547 225.27046677715646, 382.60452541175783 220.95903541116445, 400.0 222.53948766031738 C 417.3955943454147 223.6361496107778, 437.6039863833421 230.38784219008892, 455.0 237.9957498112526 C 472.3957246311705 245.48443269959137, 492.6044177489999 254.94698698298555, 510.0 260.66373154187175 C 527.3956072800966 266.6456550013206, 547.6045751665188 270.0127457000836, 565.0 269.185060895555 C 582.3954033302722 268.70305535901224, 602.6043950952894 264.1569289338551, 620.0 258.71689447869676 C 637.395501769112 253.38478788875523, 657.6045520022698 246.38060628284796, 675.0 242.01225196780388 C 692.3954969197661 237.45777482370693, 712.6046124158413 234.73662152433866, 730.0 235.25766355016776 " fill-opacity="0" stroke="green" stroke-width="2"/>
-	<line x1="70.0" y1="455.0" x2="70.0" y2="45.0" stroke="darkgray" stroke-width="2"/>
-	<line x1="65.0" y1="450.0" x2="735.0" y2="450.0" stroke="darkgray" stroke-width="2"/>
-	<text x="400.0" y="490.0" fill="black" text-anchor="middle" dominant-baseline="middle">x axis</text>
-	<text transform="translate(20.0, 250.0) rotate(270)" text-anchor="middle" dominant-baseline="middle">y axis</text>
-	<text x="70.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">0.00</text>
-	<line x1="145.0" y1="455.0" x2="145.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="145.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">1.43</text>
-	<line x1="220.00000000000003" y1="455.0" x2="220.00000000000003" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="220.00000000000003" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">2.86</text>
-	<line x1="295.0" y1="455.0" x2="295.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="295.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">4.28</text>
-	<line x1="370.00000000000006" y1="455.0" x2="370.00000000000006" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="370.00000000000006" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">5.71</text>
-	<line x1="445.0" y1="455.0" x2="445.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="445.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">7.14</text>
-	<line x1="520.0" y1="455.0" x2="520.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="520.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">8.57</text>
-	<line x1="595.0" y1="455.0" x2="595.0" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="595.0" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">10.00</text>
-	<line x1="670.0000000000001" y1="455.0" x2="670.0000000000001" y2="445.0" stroke="darkgray" stroke-width="2"/>
-	<text x="670.0000000000001" y="470.0" fill="black" text-anchor="middle" dominant-baseline="middle">11.42</text>
-	<text x="60.0" y="450.0" fill="black" text-anchor="end" dominant-baseline="middle">-1.00</text>
-	<line x1="65.0" y1="375.0" x2="75.0" y2="375.0" stroke="darkgray" stroke-width="2"/>
-	<text x="60.0" y="375.0" fill="black" text-anchor="end" dominant-baseline="middle">-0.62</text>
-	<line x1="65.0" y1="300.0" x2="75.0" y2="300.0" stroke="darkgray" stroke-width="2"/>
-	<text x="60.0" y="300.0" fill="black" text-anchor="end" dominant-baseline="middle">-0.25</text>
-	<line x1="65.0" y1="225.0" x2="75.0" y2="225.0" stroke="darkgray" stroke-width="2"/>
-	<text x="60.0" y="225.0" fill="black" text-anchor="end" dominant-baseline="middle">0.12</text>
-	<line x1="65.0" y1="150.0" x2="75.0" y2="150.0" stroke="darkgray" stroke-width="2"/>
-	<text x="60.0" y="150.0" fill="black" text-anchor="end" dominant-baseline="middle">0.50</text>
-	<line x1="65.0" y1="75.0" x2="75.0" y2="75.0" stroke="darkgray" stroke-width="2"/>
-	<text x="60.0" y="75.0" fill="black" text-anchor="end" dominant-baseline="middle">0.88</text>
 </svg>

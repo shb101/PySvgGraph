@@ -45,20 +45,22 @@ class SvgPlot:
         # Add the path:
         self.filetxt += f'''\t<path d="{pathToAdd}" fill-opacity="0" stroke="{color}" stroke-width="{thickness}"/>\n'''
     
-    def drawAxes(self, xlabel=None, ylabel=None, color='darkgray', thickness=2, ticks='auto'):
+    def drawAxes(self, xlabel=None, ylabel=None, color='darkgray', thickness=2, ticks='auto', grid=False, ylabel_space=None, xlabel_space=None):
         # Settings
         l = 5 # axis extra len
         s = 75 # tick spacing
         t = 10 # tick size
+        ty = xlabel_space if ylabel_space is not None else 40 # space between x axis and xlabel
+        tx = ylabel_space if xlabel_space is not None else 50 # space between y axis and ylabel
         dx = (self.x1 - self.x0)/(self.W - 2*self.mW)
         dy = (self.y1 - self.y0)/(self.H - 2*self.mH)
         # Draw x and y axes
         self.drawLine(self.x0, self.y0-l*dy, self.x0, self.y1+l*dy, color, thickness)
         self.drawLine(self.x0-l*dx, self.y0, self.x1+l*dx, self.y0, color, thickness)
         if xlabel is not None:
-            self.addText((self.x0+self.x1)/2, self.y0-dy*t*4, xlabel)
+            self.addText((self.x0+self.x1)/2, self.y0-dy*ty, xlabel)
         if ylabel is not None:
-            self.addText(self.x0-dx*t*5, (self.y0+self.y1)/2, ylabel, rotate=270)
+            self.addText(self.x0-dx*tx, (self.y0+self.y1)/2, ylabel, rotate=270)
         if ticks == 'auto':
             # x ticks:
             self.addText(self.x0, self.y0-dy*t*2, f'{self.x0:.2f}')
@@ -66,6 +68,8 @@ class SvgPlot:
             while self.x0 + i*dx*s < self.x1:
                 self.drawLine(self.x0+i*dx*s, self.y0-dy*t/2, self.x0+i*dx*s, self.y0+dy*t/2, color, thickness)
                 self.addText(self.x0+i*dx*s, self.y0-dy*t*2, f'{self.x0+i*dx*s:.2f}')
+                if grid == True:
+                    self.drawLine(self.x0+i*dx*s, self.y0, self.x0+i*dx*s, self.y1+l*dy, color, thickness, dash='4,4')
                 i += 1
             # y ticks:
             self.addText(self.x0-dx*t, self.y0, f'{self.y0:.2f}', anchor='end')
@@ -73,6 +77,8 @@ class SvgPlot:
             while self.y0 + i*dy*s < self.y1:
                 self.drawLine(self.x0-dx*t/2, self.y0+i*dy*s, self.x0+dx*t/2, self.y0+i*dy*s, color, thickness)
                 self.addText(self.x0-dx*t, self.y0+i*dy*s, f'{self.y0+i*dy*s:.2f}', anchor='end')
+                if grid == True:
+                    self.drawLine(self.x0, self.y0+i*dy*s, self.x1+l*dx, self.y0+i*dy*s, color, thickness, dash='4,4')
                 i += 1
         
     def fitBezierCurves(self, f, n):
@@ -81,10 +87,13 @@ class SvgPlot:
         points = model.solve()
         return points
     
-    def drawLine(self, x1, y1, x2, y2, color='black', thickness=2):
+    def drawLine(self, x1, y1, x2, y2, color='black', thickness=2, dash=None):
         (x1, y1) = self.map(x1, y1)
         (x2, y2) = self.map(x2, y2)
-        self.filetxt += f'''\t<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{color}" stroke-width="{thickness}"/>\n'''
+        if dash is None:
+            self.filetxt += f'''\t<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{color}" stroke-width="{thickness}"/>\n'''
+        else:
+            self.filetxt += f'''\t<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{color}" stroke-width="{thickness}" stroke-dasharray="{dash}"/>\n'''
     
     def addText(self, x, y, txt, color='black', rotate=0, anchor='middle'):
         (x, y) = self.map(x, y)
@@ -110,6 +119,8 @@ class SvgPlot:
 if __name__ == '__main__':
     time1 = time.time()
     img = SvgPlot(width=800, height=500, margin_width=70, margin_height=50, x_min=0, x_max=4*np.pi, y_min=-1, y_max=1)
+    img.drawAxes(xlabel='x axis', ylabel='y axis', grid=True)
+
     img.functionPlot(lambda x: np.sin(x), n=10)
     img.functionPlot(lambda x: np.cos(x), n=10, color='red')
 
@@ -125,7 +136,6 @@ if __name__ == '__main__':
     g = lambda x: np.cos(x)/(1+x)
     img.functionPlot(g, n=12, color='green')
 
-    img.drawAxes(xlabel='x axis', ylabel='y axis')
     img.save('sinwave.svg')
     time2 = time.time()
     print(f'Time: {time2-time1:.3f} seconds')
