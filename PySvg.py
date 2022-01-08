@@ -17,7 +17,6 @@ class SvgPlot:
             (self.W - 2*self.mW)/(self.x1 - self.x0) * (x-self.x0) + self.mW,
             -(self.H - 2*self.mH)/(self.y1 - self.y0) * (y-self.y0) + self.H - self.mH
         )
-        #self.filetxt = f'''<svg width="{self.W}" height="{self.H}" xmlns="http://www.w3.org/2000/svg">\n'''
         self.filetxt = ''
 
     def addLinePath(self, points, color='black', thickness=2):
